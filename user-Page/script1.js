@@ -16,20 +16,24 @@ async function getInfo(URL) {
     setInterval(() => {
       getDate(data);
     }, 1000);
-    let location = data.loc.split(",");
-    // console.log(location);
+    // Geo-Location 
+
+    navigator.geolocation.getCurrentPosition((position)=>{
+      let positionCooredinates = position.coords;
+      let latitude = positionCooredinates.latitude;
+      let longitude = positionCooredinates.longitude;
+      
+      document.getElementById("latitude").innerText = latitude;
+      document.getElementById("longitude").innerText = longitude;
+      document.getElementById("iframe").src = `https://maps.google.com/maps?q=${latitude},${longitude}&output=embed`;
+    })
 
     //Header Elements
     document.getElementById("address").innerText = data.ip;
-    document.getElementById("latitude").innerText = location[0];
-    document.getElementById("longitude").innerText = location[1];
     document.getElementById("city").innerText = data.city;
     document.getElementById("region").innerText = data.region;
     document.getElementById("org").innerText = data.org;
     document.getElementById("host-name").innerText = data.hostname;
-    document.getElementById(
-      "iframe"
-    ).src = `https://maps.google.com/maps?q=${location[0]},${location[1]}&output=embed`;
 
     // More About You Elements
     document.getElementById("time-zone").innerText = data.timezone;
