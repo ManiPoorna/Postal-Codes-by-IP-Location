@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #000;
+    color: #fff;
+}
+.header .ip-address{
+    color: #B8BCCC80;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 40px 0px 40px;
+}
+#address{
+    color: #b8bccc;
+}
+.header .details{
+    color: #b8bcccaf;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+#latitude,#longitude,#city,#region,#org,#host-name{
+    color: #b8bccc;
+}
+.lat-lon,.city-region,.org-host{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.location{
+    background-color: #575a85;
+    color: #b8bccc;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    text-align: center;
+}
+section.location .heading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+#iframe{
+    margin: 0px auto;
+}
+section.more-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: #000;
+}
+section.more-info .heading{
+    color: #b8bccc;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+section.more-info .details{
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #B8BCCC80;
+}
+#time-zone,#date,#time,#pincode,#pin-count{
+    color: #b8bccc;
+}
+section.post-offices{
+    background-color: #000;
+}
+section.post-offices .heading{
+    color: #b8bccc;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+section.post-offices .search{
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px;
+}
+section.post-offices .search img{
+    opacity: 0.8;
+    width: 1.3%;
+    position: absolute;
+    top: 43px;
+    left: 105px;
+}
+section.post-offices .search input{
+    font-weight: 600;
+    font-size: 16px;
+    width: 85%;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #B8BCCC;
+    border: 2px solid #575A85;
+    border-radius: 5px;
+}
+section.post-offices .search input:focus{
+    outline: none;
+}
+section.post-offices .cards-container{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+section.post-offices .cards-container .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 25%;
+    max-width: 30%;
+    padding: 20px;
+    background-color: #575A85;
+    color: #B8BCCC;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#name,#branch,#status,#district,#division{
+    text-decoration: underline;
+}

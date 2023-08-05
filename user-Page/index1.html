@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Offices</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="header">
+        <div class="ip-address">IP Address : <span id="address"></span></div>
+        <div class="details">
+            <div class="lat-lon">
+                <div class="lat">Lat :  <span id="latitude"></span></div>
+                <div class="lon">Long :  <span id="longitude"></span></div>
+            </div>
+            <div class="city-region">
+                <div class="city">City :  <span id="city"></span></div>
+                <div class="region">Region : <span id="region"></span></div>
+            </div>
+            <div class="org-host">
+                <div class="organisation">Organisation : <span id="org"></span></div>
+                <div class="host-name">Hostname :  <span id="host-name"></span></div>
+            </div>
+        </div>
+    </div>
+    <section class="location">
+        <div class="heading">Your Current Location</div>
+        <iframe id="iframe" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="60%" height="400" frameborder="0" style="border:0"></iframe>
+    </section>
+
+    <section class="more-info">
+        <div class="heading">More Information About You</div>
+        <div class="details">
+            <div class="time-zone"> Time Zone : <span id="time-zone"></span></div>
+            <div class="date-time">Date And Time : <span id="date"></span> & <span id="time"></span> </div>
+            <div class="pincode">Pincode : <span id="pincode"></span></div>
+            <div class="pincodes-found">Message : <span id="pin-count"></span></div>
+        </div>
+    </section>
+
+    <section class="post-offices">
+        <div class="heading">Post Offices Near You</div>
+        <div class="search">
+            <img src="../assets/Search.svg" alt="Search">
+            <input type="text" placeholder="Search By Name">
+        </div>
+        <div class="cards-container" id="cards-container">
+            <!-- <div class="card">
+                <div class="name">Name : <span id="name"></span></div>
+                <div class="branch">Branch : <span id="branch"></span></div>
+                <div class="status">Status : <span id="status"></span></div>
+                <div class="district">District : <span id="district"></span></div>
+                <div class="division">Division : <span id="division"></span></div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <script src="./script1.js">console.clear();</script>
+</body>
+</html>
