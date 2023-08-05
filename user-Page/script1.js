@@ -64,7 +64,7 @@ async function getpost(url) {
   let data = await r.json();
   document.getElementById("pin-count").innerText = data[0].Message;
   let postOffices = data[0].PostOffice;
-  // console.log(postOffices);
+  console.log(postOffices);
   renderPostOffices(postOffices);
 }
 

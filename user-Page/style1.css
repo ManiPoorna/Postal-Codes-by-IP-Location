@@ -119,13 +119,17 @@ section.post-offices .cards-container{
     gap: 20px;
     padding: 40px;
 }
-
+#iframe{
+    width: 60%;
+    height: 400px;
+}
 section.post-offices .cards-container .card{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
-    min-width: 25%;
-    max-width: 30%;
+    width: 30%;
+    height: 250px;
     padding: 20px;
     background-color: #575A85;
     color: #B8BCCC;
@@ -135,4 +139,53 @@ section.post-offices .cards-container .card{
 }
 #name,#branch,#status,#district,#division{
     text-decoration: underline;
+}
+
+@media all and (max-width : 768px) and (min-width : 320px){
+    .header .details{
+        flex-flow: row wrap;
+        gap: 20px;
+        font-size: 12px;
+    }
+    .lat-lon, .city-region, .org-host{
+        gap: 3px;
+        text-align: center;
+    }
+    .header .ip-address{
+        font-size: 16px;
+        text-align: center;
+    }
+    section.location .heading{
+        font-size: 16px;
+    }
+    #iframe{
+        width: 80%;
+        height: 100px;
+    }
+    section.more-info .heading,section.post-offices .heading{
+        text-decoration: underline;
+        font-size: 16px;
+    }
+    section.more-info .details{
+        font-size: 12px;
+        gap: 10px;
+    }
+    section.post-offices .search input{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    section.post-offices .search img {
+       display: none;
+    }
+    section.post-offices .cards-container .card{
+        gap: 7px;
+        min-width: 37%;
+        height: 110px;
+        padding: 10px;
+        font-size: 8px;
+        justify-content: center;
+    }
+    section.post-offices .cards-container{
+        padding: 10px 30px;
+    }
 }
